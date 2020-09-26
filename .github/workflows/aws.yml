@@ -22,5 +22,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: nodejs-rest-api
         environment_name: NodejsRestApi-env
-        region: us-west-2
+        version_label: 12345
+        region: us-east-2
         deployment_package: deploy.zip
