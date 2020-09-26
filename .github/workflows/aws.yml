@@ -6,7 +6,6 @@
     aws_secret_key: ${{secrets.AWS_SECRET_KEY}}
     application_name: nodejs-rest-api
     environment_name: NodejsRestApi-env
-    region: us-east-2
     version_label: "my-app-${{ steps.format-time.outputs.replaced }}" // Using timestamp create on step #
     deployment_package: deploy.zip
 
