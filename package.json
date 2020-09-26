@@ -4,9 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
     "dev": "cross-env NODE_ENV=development nodemon index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "node",
+    "node.js",
+    "generator",
+    "express",
+    "rest",
+    "api",
+    "mongodb",
+    "mongoose",
+    "es6",
+    "es7",
+    "es8",
+    "es9",
+    "passport",
+    "joi"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
