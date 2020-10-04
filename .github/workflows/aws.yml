@@ -11,7 +11,12 @@ jobs:
     
     - name: Checkout source code
       uses: actions/checkout@v1
-
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.18.2'
+    - run: npm install
+    
     - name: Generate deployment package
       run: zip -r deploy.zip . -x '*.git*'
     
