@@ -13,9 +13,8 @@ const { authLimiter } = require("../../middlewares/rateLimiter");
 const routes = require("../../routes/v1");
 const { errorConverter, errorHandler } = require("../../middlewares/error");
 const ApiError = require("../../utils/ApiError");
-
 const app = express();
-
+app.use('/v1/docs/', express.static('../../routes/v1'))
 if (config.env !== "test") {
   app.use(morgan.successHandler);
   app.use(morgan.errorHandler);
