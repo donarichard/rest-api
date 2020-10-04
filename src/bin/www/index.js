@@ -15,7 +15,8 @@ const { errorConverter, errorHandler } = require("../../middlewares/error");
 const ApiError = require("../../utils/ApiError");
 
 const app = express();
-
+const pathToSwaggerUi = require('swagger-ui-dist').absolutePath()
+app.use(express.static(pathToSwaggerUi))
 if (config.env !== "test") {
   app.use(morgan.successHandler);
   app.use(morgan.errorHandler);
